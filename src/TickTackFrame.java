@@ -7,8 +7,8 @@ import javax.swing.JFrame;
 
 public class TickTackFrame extends JFrame{
 	
-	
 	public TickTackFrame() {
+		
 		super("TickTackToe");
 		TickPanelToe panel = new TickPanelToe();
 		this.add(panel);
@@ -21,14 +21,20 @@ public class TickTackFrame extends JFrame{
 				panel.clear();
 				
 			}
+			
 		});
 		this.add(clear, BorderLayout.SOUTH);
-		this.pack();
+		
+		this.setSize(300,300);
 		this.setVisible(true);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
 	}
 	
 	public static void main(String[] args) {
+		
 		new TickTackFrame();
+		
 	}
+	
 }
